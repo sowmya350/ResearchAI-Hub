@@ -1,0 +1,57 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, sans-serif; background: #f4f6fb; color: #1f2937; }
+header { background: #1e3a8a; color: #fff; padding: 14px 32px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
+header h1 { margin: 0; font-size: 22px; }
+header p { margin: 4px 0 0; opacity: .8; font-size: 14px; }
+nav { display: flex; gap: 8px; align-items: center; }
+nav button { background: transparent; color: #fff; border: 1px solid rgba(255,255,255,.4); padding: 8px 14px; border-radius: 8px; cursor: pointer; font-size: 14px; }
+nav button.on { background: rgba(255,255,255,.22); }
+nav .who { margin: 0 6px; font-size: 14px; }
+main { max-width: 1050px; margin: 24px auto; padding: 0 16px 40px; }
+.muted { color: #6b7280; font-size: 14px; }
+.tabs { display: flex; gap: 8px; margin-bottom: 16px; }
+.tabs button { padding: 10px 18px; border: 1px solid #c7d2fe; background: #fff; border-radius: 8px; cursor: pointer; font-size: 15px; }
+.tabs button.active { background: #4338ca; color: #fff; border-color: #4338ca; }
+.card { background: #fff; border-radius: 12px; padding: 20px; margin-bottom: 16px; box-shadow: 0 1px 4px rgba(0,0,0,.08); }
+.card h3 { margin-top: 0; }
+.btn { background: #4338ca; color: #fff; border: 0; padding: 10px 18px; border-radius: 8px; cursor: pointer; font-size: 15px; margin-right: 8px; }
+.btn.secondary { background: #e0e7ff; color: #3730a3; }
+.btn.small { padding: 5px 10px; font-size: 13px; }
+.btn.danger { background: #fee2e2; color: #991b1b; }
+.btn.wide { width: 100%; margin: 14px 0 0; }
+.btn:disabled { opacity: .5; cursor: not-allowed; }
+.error { background: #fee2e2; color: #991b1b; padding: 10px 14px; border-radius: 8px; margin-top: 12px; }
+.note { background: #fef9c3; color: #854d0e; padding: 10px 14px; border-radius: 8px; margin-top: 12px; font-size: 14px; }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; }
+.stat { background: #eef2ff; border-radius: 10px; padding: 12px; font-size: 13px; }
+.stat b { display: block; font-size: 22px; color: #3730a3; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid #e5e7eb; }
+tr.clickable { cursor: pointer; }
+tr.clickable:hover { background: #f3f4f6; }
+tr.sel { background: #e0e7ff; cursor: pointer; }
+.row { display: flex; gap: 20px; flex-wrap: wrap; align-items: flex-start; }
+.row > * { flex: 1; min-width: 280px; }
+img.preview { max-width: 200px; image-rendering: pixelated; border-radius: 8px; border: 1px solid #ddd; }
+select { padding: 6px 10px; border-radius: 6px; margin-bottom: 8px; }
+.legend { display: flex; align-items: center; gap: 8px; font-size: 12px; margin-top: 6px; }
+.legend-bar { width: 160px; height: 10px; border-radius: 5px; background: linear-gradient(to right, rgb(37,99,235), #fff, rgb(220,38,38)); border: 1px solid #ddd; }
+table.cm { width: auto; }
+table.cm td { text-align: center; font-weight: 700; padding: 14px 22px; }
+
+/* login */
+.login-wrap { min-height: 100vh; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #1e3a8a, #4338ca); padding: 16px; }
+.login-card { background: #fff; border-radius: 16px; padding: 32px; width: 100%; max-width: 380px; box-shadow: 0 10px 30px rgba(0,0,0,.25); }
+.login-card h1 { margin: 0; color: #1e3a8a; }
+.login-card label { display: block; margin: 12px 0 4px; font-size: 14px; }
+.login-card input { width: 100%; padding: 10px; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 15px; }
+
+/* dashboard */
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 16px; margin-bottom: 20px; }
+.module-card { text-align: left; background: #fff; border: 2px solid transparent; border-radius: 14px; padding: 22px; cursor: pointer; box-shadow: 0 1px 4px rgba(0,0,0,.08); transition: .15s; font-family: inherit; }
+.module-card:hover { border-color: #4338ca; transform: translateY(-3px); }
+.module-card .icon { font-size: 38px; }
+.module-card h3 { margin: 8px 0; }
+.module-card p { color: #4b5563; font-size: 14px; min-height: 84px; }
+.module-card b { color: #4338ca; }
+.tag { background: #e0e7ff; color: #3730a3; font-size: 12px; padding: 3px 9px; border-radius: 99px; }

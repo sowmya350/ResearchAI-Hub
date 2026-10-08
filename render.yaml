@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: researchai-hub
+    runtime: docker
+    plan: free
+    healthCheckPath: /api/health
+    envVars:
+      - key: RESEARCHAI_SECRET
+        generateValue: true
